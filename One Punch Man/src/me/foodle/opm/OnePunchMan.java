@@ -22,7 +22,7 @@ public class OnePunchMan extends JavaPlugin implements Listener {
             if(e.getEntity() instanceof Player){
                 Player player = (Player) e.getEntity();
                 if(player.getName().equalsIgnoreCase("Boros")){
-                    player.setHealth(0);
+                    player.setHealth(player.getHealth() - 10);
                 }
             }
             if(e.getEntity() instanceof LivingEntity){
